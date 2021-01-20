@@ -28,21 +28,11 @@ int main() {
 	int multicolor,FINISH_GAME=0;
 	int PIOCHER_OBJ=0;
 	
-	
-
-	connectToServer("li1417-56.members.linode.com",1234,"ROBOCOP");
-
-	while(1){
-	printf("DEBUT DE PARTIE !\n");
 	creatingGame(&Plateau);
 	playerInit(&Plateau, &bruce,& enemy,&jeu);
 
-	replay = 0;	
-	lastMove = NONE;
-	it_obj=0;
-	CHOOSE=0;
-	FINISH_GAME=0;
-	PIOCHER_OBJ=0;
+	printf("C'est au joueur %d de jouer !\n",jeu.player_nb );
+
 
 	// Initialisation of the 2 dimensions array routes
 	// It is an array has for type : route
@@ -369,14 +359,9 @@ int main() {
 	free(Plateau.Tracks);
 	
 	if ((retCode == WINNING_MOVE && jeu.player_nb == 0) || (retCode == LOOSING_MOVE && jeu.player_nb == 1))
-		{
-			printf("GG à moi !\n");
-		}
-	else{
+		printf("GG à moi !\n");
+	else
 		printf("I'm lagging !\n");
-	}
-	}
-
 
 
 	closeConnection();
