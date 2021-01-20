@@ -68,10 +68,6 @@ void displayGame(t_player* pBRUCE,t_player* enemy, game_board* pGame, game* pjeu
 	printf("Nombre de wagons : %d \n", pBRUCE->nbWagons_available);
 	printf("Nombre de cartes dans la main : %d\n",pBRUCE->nbCards);
 	printf("Nombre d'objectifs : %d \n\n",pBRUCE->nbObjectives);
-	printf("Cartes du bot -->\n");
-	printf("Nombre de wagons : %d \n", enemy->nbWagons_available);
-	printf("Nombre de cartes dans la main : %d\n",enemy->nbCards);
-	printf("Nombre d'objectifs : %d \n",enemy->nbObjectives);
 
 }
 
