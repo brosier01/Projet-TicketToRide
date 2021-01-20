@@ -9,7 +9,7 @@ void creatingGame(game_board* pGame){
 
     connectToServer("li1417-56.members.linode.com",1234,"ROBOCOP");
 
-    waitForT2RGame(/*"TRAINING NICE_BOT MAP=USA"*/"TOURNAMENT EISE3", game_name, &(pGame->nbCities), &(pGame->nbTracks)); 
+    waitForT2RGame("TRAINING NICE_BOT MAP=USA", game_name, &(pGame->nbCities), &(pGame->nbTracks)); 
     printf("nbCities : %d | nbTracks : %d\n",pGame->nbCities, pGame->nbTracks);
     printf("Game Name : %s \n", game_name );
     pGame->Tracks=(int*)malloc(5*pGame->nbTracks*sizeof(int));
