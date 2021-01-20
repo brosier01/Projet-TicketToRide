@@ -30,8 +30,6 @@ int main() {
 	
 	
 
-	//printf("C'est au joueur %d de jouer !\n",jeu.player_nb );
-
 	connectToServer("li1417-56.members.linode.com",1234,"ROBOCOP");
 
 	while(1){
